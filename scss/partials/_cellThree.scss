@@ -1,0 +1,36 @@
+$cellThreeColor: hsl(0, 0%, 100%);
+
+#cellThree{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color:$cellThreeColor;
+}
+
+@media screen and (max-width:1300px){
+    #cellThree{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+}
+
+@media screen and (max-width:900px){
+    #cellThree{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+}
+
+@media screen and (max-width:650px){
+    #cellThree{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 6;
+    }
+}

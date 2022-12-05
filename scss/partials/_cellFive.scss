@@ -1,0 +1,27 @@
+$cellFiveColor: hsl(219, 29%, 14%);
+
+#cellFive{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color:$cellFiveColor;
+}
+
+@media screen and (max-width:900px){
+    #cellFive{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+}
+
+@media screen and (max-width:650px){
+    #cellFive{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 7;
+        grid-row-end: 9;
+    }
+}

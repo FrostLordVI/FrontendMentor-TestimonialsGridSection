@@ -1,0 +1,32 @@
+$cellOneColor:hsl(263, 55%, 52%);
+
+#cellOne{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color:$cellOneColor;
+    position:relative;
+}
+#quote{
+    position: absolute;
+    top: 11%;
+    left: 73%;
+    border-radius: 0;
+    border: none;
+    transform:scale(2.7);
+    z-index: 0;
+}
+
+@media screen and (max-width:650px){
+    #cellOne{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    #quote{
+        top: 7%;
+    }
+}
